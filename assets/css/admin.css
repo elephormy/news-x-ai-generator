@@ -1,0 +1,261 @@
+/* News X AI Generator Admin Styles */
+
+.news-x-ai-admin-container {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.news-x-ai-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.news-x-ai-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #23282d;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.news-x-ai-controls {
+    margin-bottom: 20px;
+}
+
+.news-x-ai-controls .button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.news-x-ai-controls label {
+    margin-right: 10px;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.news-x-ai-controls select {
+    margin-right: 15px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.news-x-ai-status {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.news-x-ai-status .spinner {
+    margin-right: 10px;
+}
+
+.news-x-ai-results {
+    margin-top: 20px;
+}
+
+.generated-posts {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#clear-results-btn {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+#clear-results-btn:hover {
+    background: #e5e5e5;
+    border-color: #999;
+    color: #333;
+}
+
+.generated-posts h3 {
+    margin-top: 0;
+    color: #23282d;
+}
+
+.generated-posts ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.generated-posts li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.generated-posts li:last-child {
+    margin-bottom: 0;
+}
+
+.post-category {
+    background: #0073aa;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin: 0 5px;
+}
+
+.post-status {
+    background: #46b450;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin: 0 5px;
+}
+
+.generation-errors {
+    background: #fef7f1;
+    border: 1px solid #f0b849;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.generation-errors h3 {
+    margin-top: 0;
+    color: #d63638;
+}
+
+.generation-errors ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.generation-errors li {
+    color: #d63638;
+    margin-bottom: 5px;
+}
+
+.news-x-ai-debug {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.news-x-ai-debug p {
+    margin: 5px 0;
+}
+
+#debug-output {
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 15px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#debug-output h4 {
+    margin-top: 0;
+    color: #23282d;
+}
+
+#debug-output ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+#debug-output li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+#debug-output small {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.error {
+    color: #d63638;
+    font-weight: 600;
+}
+
+/* Progress bar styles */
+.progress-container {
+    background: #f1f1f1;
+    border-radius: 4px;
+    padding: 3px;
+    margin: 10px 0;
+    display: none;
+}
+
+.progress-fill {
+    background: #0073aa;
+    height: 20px;
+    border-radius: 2px;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Form enhancements */
+.form-table th {
+    width: 200px;
+}
+
+.form-table td {
+    padding: 15px 10px;
+}
+
+.form-table select,
+.form-table input[type="text"],
+.form-table input[type="password"] {
+    width: 300px;
+}
+
+/* Responsive design */
+@media (max-width: 782px) {
+    .news-x-ai-controls label,
+    .news-x-ai-controls select,
+    .news-x-ai-controls .button {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .form-table th,
+    .form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .form-table select,
+    .form-table input[type="text"],
+    .form-table input[type="password"] {
+        width: 100%;
+    }
+} 

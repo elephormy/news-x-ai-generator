@@ -1,0 +1,444 @@
+/* Professional Newspaper Article Styling */
+
+/* High specificity selectors to override theme styles */
+.entry-content .newspaper-article,
+.post-content .newspaper-article,
+.single-post .newspaper-article,
+.article-content .newspaper-article,
+.newspaper-article {
+    font-family: 'Times New Roman', Georgia, serif !important;
+    line-height: 1.6 !important;
+    color: #333 !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+    background: #fff !important;
+    font-size: 16px !important;
+}
+
+/* Lead paragraph styling - like major newspapers */
+.entry-content .newspaper-article .lead-paragraph,
+.post-content .newspaper-article .lead-paragraph,
+.single-post .newspaper-article .lead-paragraph,
+.article-content .newspaper-article .lead-paragraph,
+.newspaper-article .lead-paragraph {
+    font-size: 1.2em !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    margin-bottom: 20px !important;
+    color: #2c3e50 !important;
+    border-left: 4px solid #3498db !important;
+    padding-left: 15px !important;
+    background: #f8f9fa !important;
+    padding: 15px !important;
+    border-radius: 4px !important;
+}
+
+/* Section headings */
+.entry-content .newspaper-article .section-heading,
+.post-content .newspaper-article .section-heading,
+.single-post .newspaper-article .section-heading,
+.article-content .newspaper-article .section-heading,
+.newspaper-article .section-heading {
+    font-family: 'Arial', sans-serif !important;
+    font-size: 1.3em !important;
+    font-weight: 700 !important;
+    color: #2c3e50 !important;
+    margin: 30px 0 15px 0 !important;
+    padding-bottom: 8px !important;
+    border-bottom: 2px solid #3498db !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* ENHANCED: Catch ALL headings that might be missed by detection */
+.entry-content .newspaper-article h3,
+.post-content .newspaper-article h3,
+.single-post .newspaper-article h3,
+.article-content .newspaper-article h3,
+.newspaper-article h3 {
+    font-family: 'Arial', sans-serif !important;
+    font-size: 1.3em !important;
+    font-weight: 700 !important;
+    color: #2c3e50 !important;
+    margin: 30px 0 15px 0 !important;
+    padding-bottom: 8px !important;
+    border-bottom: 2px solid #3498db !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    display: block !important;
+    clear: both !important;
+    line-height: 1.2 !important;
+}
+
+/* ENHANCED: Catch any text that looks like a heading but wasn't detected */
+.entry-content .newspaper-article p:not(.lead-paragraph),
+.post-content .newspaper-article p:not(.lead-paragraph),
+.single-post .newspaper-article p:not(.lead-paragraph),
+.article-content .newspaper-article p:not(.lead-paragraph),
+.newspaper-article p:not(.lead-paragraph) {
+    /* Check if this paragraph looks like a heading and style it accordingly */
+}
+
+/* Regular paragraphs */
+.entry-content .newspaper-article p,
+.post-content .newspaper-article p,
+.single-post .newspaper-article p,
+.article-content .newspaper-article p,
+.newspaper-article p {
+    font-size: 1.05em !important;
+    line-height: 1.65 !important;
+    margin-bottom: 18px !important;
+    text-align: justify !important;
+    text-indent: 0 !important;
+    font-family: 'Times New Roman', Georgia, serif !important;
+    color: #333 !important;
+}
+
+/* First letter drop cap for lead paragraph (optional enhancement) */
+.newspaper-article .lead-paragraph:first-letter {
+    float: left;
+    font-size: 3.5em;
+    line-height: 0.9;
+    margin: 0.1em 0.1em 0 0;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Professional quotes */
+.newspaper-article .professional-quote {
+    font-style: italic;
+    font-size: 1.1em;
+    margin: 25px 0;
+    padding: 20px;
+    background: #ecf0f1;
+    border-left: 5px solid #34495e;
+    position: relative;
+    quotes: '"' '"';
+}
+
+.newspaper-article .professional-quote:before {
+    content: open-quote;
+    font-size: 4em;
+    color: #bdc3c7;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    line-height: 0.1em;
+}
+
+.newspaper-article .professional-quote:after {
+    content: close-quote;
+    font-size: 4em;
+    color: #bdc3c7;
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+    line-height: 0.1em;
+}
+
+/* Lists in articles */
+.entry-content .newspaper-article ul,
+.post-content .newspaper-article ul,
+.single-post .newspaper-article ul,
+.article-content .newspaper-article ul,
+.newspaper-article ul,
+.entry-content .newspaper-article ol,
+.post-content .newspaper-article ol,
+.single-post .newspaper-article ol,
+.article-content .newspaper-article ol,
+.newspaper-article ol,
+.entry-content .newspaper-article .article-list,
+.post-content .newspaper-article .article-list,
+.single-post .newspaper-article .article-list,
+.article-content .newspaper-article .article-list,
+.newspaper-article .article-list {
+    margin: 20px 0 !important;
+    padding-left: 30px !important;
+    list-style-type: disc !important;
+}
+
+.entry-content .newspaper-article li,
+.post-content .newspaper-article li,
+.single-post .newspaper-article li,
+.article-content .newspaper-article li,
+.newspaper-article li,
+.entry-content .newspaper-article .article-list-item,
+.post-content .newspaper-article .article-list-item,
+.single-post .newspaper-article .article-list-item,
+.article-content .newspaper-article .article-list-item,
+.newspaper-article .article-list-item {
+    margin-bottom: 12px !important;
+    line-height: 1.6 !important;
+    font-size: 1.05em !important;
+    font-family: 'Times New Roman', Georgia, serif !important;
+    color: #333 !important;
+}
+
+.entry-content .newspaper-article .article-list-item,
+.post-content .newspaper-article .article-list-item,
+.single-post .newspaper-article .article-list-item,
+.article-content .newspaper-article .article-list-item,
+.newspaper-article .article-list-item {
+    position: relative !important;
+    padding-left: 5px !important;
+}
+
+.entry-content .newspaper-article ol,
+.post-content .newspaper-article ol,
+.single-post .newspaper-article ol,
+.article-content .newspaper-article ol,
+.newspaper-article ol {
+    list-style-type: decimal !important;
+}
+
+.entry-content .newspaper-article ol .article-list-item,
+.post-content .newspaper-article ol .article-list-item,
+.single-post .newspaper-article ol .article-list-item,
+.article-content .newspaper-article ol .article-list-item,
+.newspaper-article ol .article-list-item {
+    padding-left: 8px !important;
+}
+
+/* Images in articles */
+.newspaper-article img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Caption styling */
+.newspaper-article .wp-caption-text,
+.newspaper-article figcaption {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    font-style: italic;
+    text-align: center;
+    margin-top: 8px;
+    padding: 0 10px;
+}
+
+/* Links in articles */
+.newspaper-article a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 1px dotted #3498db;
+    transition: all 0.3s ease;
+}
+
+.newspaper-article a:hover {
+    color: #2980b9;
+    border-bottom: 1px solid #2980b9;
+}
+
+/* Emphasis and strong text */
+.newspaper-article strong {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.newspaper-article em {
+    font-style: italic;
+    color: #34495e;
+}
+
+/* Article metadata (if used) */
+.newspaper-article .article-meta {
+    font-size: 0.9em;
+    color: #95a5a6;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .newspaper-article {
+        padding: 15px;
+    }
+    
+    .newspaper-article .lead-paragraph {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+    
+    .newspaper-article .section-heading {
+        font-size: 1.2em;
+    }
+    
+    .newspaper-article p {
+        font-size: 1em;
+    }
+    
+    .newspaper-article .lead-paragraph:first-letter {
+        font-size: 2.5em;
+    }
+}
+
+/* Print styles for newspaper look */
+@media print {
+    .newspaper-article {
+        font-family: 'Times', serif;
+        color: #000;
+        background: #fff;
+    }
+    
+    .newspaper-article .lead-paragraph {
+        border-left: 2px solid #000;
+        background: #fff;
+    }
+    
+    .newspaper-article .section-heading {
+        border-bottom: 1px solid #000;
+    }
+    
+    .newspaper-article .professional-quote {
+        background: #f5f5f5;
+        border-left: 3px solid #000;
+    }
+}
+
+/* WordPress theme compatibility */
+.entry-content .newspaper-article {
+    font-family: inherit;
+}
+
+.entry-content .newspaper-article .lead-paragraph {
+    font-size: 1.15em;
+}
+
+/* Additional professional touches */
+.newspaper-article .byline {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.newspaper-article .dateline {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.newspaper-article .statistics {
+    background: #f8f9fa;
+    padding: 15px;
+    border-left: 4px solid #e74c3c;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.newspaper-article .statistics strong {
+    color: #e74c3c;
+    font-size: 1.2em;
+}
+
+/* Force override for any theme conflicts */
+body .newspaper-article,
+body .entry-content .newspaper-article,
+body .post-content .newspaper-article,
+body .single-post .newspaper-article {
+    font-family: 'Times New Roman', Georgia, serif !important;
+    line-height: 1.6 !important;
+    color: #333 !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+    background: #fff !important;
+    font-size: 16px !important;
+}
+
+/* Additional aggressive overrides for paragraph spacing */
+body .newspaper-article p,
+body .entry-content .newspaper-article p,
+body .post-content .newspaper-article p,
+body .single-post .newspaper-article p,
+body .newspaper-article p,
+body .entry-content .newspaper-article p,
+body .post-content .newspaper-article p,
+body .single-post .newspaper-article p {
+    display: block !important;
+    margin-bottom: 18px !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    line-height: 1.65 !important;
+    font-size: 1.05em !important;
+    text-align: justify !important;
+    text-indent: 0 !important;
+    font-family: 'Times New Roman', Georgia, serif !important;
+    color: #333 !important;
+    clear: both !important;
+}
+
+/* Ensure headings are properly styled and spaced */
+body .newspaper-article h3,
+body .entry-content .newspaper-article h3,
+body .post-content .newspaper-article h3,
+body .single-post .newspaper-article h3,
+body .newspaper-article h3,
+body .entry-content .newspaper-article h3,
+body .post-content .newspaper-article h3,
+body .single-post .newspaper-article h3 {
+    display: block !important;
+    font-family: 'Arial', sans-serif !important;
+    font-size: 1.3em !important;
+    font-weight: 700 !important;
+    color: #2c3e50 !important;
+    margin: 30px 0 15px 0 !important;
+    padding-bottom: 8px !important;
+    border-bottom: 2px solid #3498db !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    clear: both !important;
+    line-height: 1.2 !important;
+}
+
+body .newspaper-article p,
+body .entry-content .newspaper-article p,
+body .post-content .newspaper-article p,
+body .single-post .newspaper-article p {
+    font-size: 1.05em !important;
+    line-height: 1.65 !important;
+    margin-bottom: 18px !important;
+    text-align: justify !important;
+    text-indent: 0 !important;
+    font-family: 'Times New Roman', Georgia, serif !important;
+    color: #333 !important;
+}
+
+body .newspaper-article .section-heading,
+body .entry-content .newspaper-article .section-heading,
+body .post-content .newspaper-article .section-heading,
+body .single-post .newspaper-article .section-heading {
+    font-family: 'Arial', sans-serif !important;
+    font-size: 1.3em !important;
+    font-weight: 700 !important;
+    color: #2c3e50 !important;
+    margin: 30px 0 15px 0 !important;
+    padding-bottom: 8px !important;
+    border-bottom: 2px solid #3498db !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+body .newspaper-article ul,
+body .entry-content .newspaper-article ul,
+body .post-content .newspaper-article ul,
+body .single-post .newspaper-article ul {
+    margin: 20px 0 !important;
+    padding-left: 30px !important;
+    list-style-type: disc !important;
+}
+
+body .newspaper-article li,
+body .entry-content .newspaper-article li,
+body .post-content .newspaper-article li,
+body .single-post .newspaper-article li {
+    margin-bottom: 12px !important;
+    line-height: 1.6 !important;
+    font-size: 1.05em !important;
+    font-family: 'Times New Roman', Georgia, serif !important;
+    color: #333 !important;
+}
